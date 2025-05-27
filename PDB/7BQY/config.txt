@@ -1,0 +1,11 @@
+receptor = ./7bqy_clean.pdbqt
+ligand = ./n3_inhibitor.pdbqt
+center_x = 8.565
+center_y = -3.095
+center_z = 23.658
+size_x = 25
+size_y = 25
+size_z = 25
+exhaustiveness = 8
+num_modes = 9
+cpu=12

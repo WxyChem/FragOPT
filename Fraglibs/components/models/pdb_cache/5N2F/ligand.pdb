@@ -1,0 +1,76 @@
+REMARK Selection 'resnum 201'
+HETATM    1  F1  8HW B 201      35.293  10.989 136.832  1.00 59.75           F  
+ANISOU    1  F1  8HW B 201        0      0      0      0      0      0       F  
+HETATM    2  C19 8HW B 201      34.574  10.071 136.129  1.00 57.59           C  
+ANISOU    2  C19 8HW B 201        0      0      0      0      0      0       C  
+HETATM    3  C20 8HW B 201      34.493   8.758 136.556  1.00 56.64           C  
+ANISOU    3  C20 8HW B 201        0      0      0      0      0      0       C  
+HETATM    4  C21 8HW B 201      33.740   7.852 135.819  1.00 56.19           C  
+ANISOU    4  C21 8HW B 201        0      0      0      0      0      0       C  
+HETATM    5  C22 8HW B 201      33.629   6.389 136.254  1.00 56.20           C  
+ANISOU    5  C22 8HW B 201        0      0      0      0      0      0       C  
+HETATM    6  N   8HW B 201      32.327   6.072 136.803  1.00 56.95           N  
+ANISOU    6  N   8HW B 201        0      0      0      0      0      0       N  
+HETATM    7  C23 8HW B 201      32.031   6.999 137.872  1.00 61.66           C  
+ANISOU    7  C23 8HW B 201        0      0      0      0      0      0       C  
+HETATM    8  C24 8HW B 201      32.517   6.420 139.197  1.00 68.49           C  
+ANISOU    8  C24 8HW B 201        0      0      0      0      0      0       C  
+HETATM    9  O3  8HW B 201      33.658   6.148 139.372  1.00 57.06           O  
+ANISOU    9  O3  8HW B 201        0      0      0      0      0      0       O  
+HETATM   10  C25 8HW B 201      31.478   6.193 140.288  1.00 75.86           C  
+ANISOU   10  C25 8HW B 201        0      0      0      0      0      0       C  
+HETATM   11  C26 8HW B 201      30.079   6.402 139.708  1.00 79.51           C  
+ANISOU   11  C26 8HW B 201        0      0      0      0      0      0       C  
+HETATM   12  O4  8HW B 201      29.489   5.450 139.126  1.00 71.58           O  
+ANISOU   12  O4  8HW B 201        0      0      0      0      0      0       O  
+HETATM   13  O5  8HW B 201      29.526   7.530 139.805  1.00 81.63           O  
+ANISOU   13  O5  8HW B 201        0      0      0      0      0      0       O  
+HETATM   14  C2  8HW B 201      33.927  10.476 134.977  1.00 42.94           C  
+ANISOU   14  C2  8HW B 201        0      0      0      0      0      0       C  
+HETATM   15  C1  8HW B 201      33.182   9.577 134.234  1.00 44.10           C  
+ANISOU   15  C1  8HW B 201        0      0      0      0      0      0       C  
+HETATM   16  C   8HW B 201      33.094   8.263 134.663  1.00 49.09           C  
+ANISOU   16  C   8HW B 201        0      0      0      0      0      0       C  
+HETATM   17  F   8HW B 201      32.372   7.354 133.951  1.00 43.59           F  
+ANISOU   17  F   8HW B 201        0      0      0      0      0      0       F  
+HETATM   18  O   8HW B 201      34.060  11.807 134.585  1.00 25.82           O  
+ANISOU   18  O   8HW B 201        0      0      0      0      0      0       O  
+HETATM   19  C3  8HW B 201      33.167  12.206 133.585  1.00 28.40           C  
+ANISOU   19  C3  8HW B 201        0      0      0      0      0      0       C  
+HETATM   20  C4  8HW B 201      33.555  13.645 133.305  1.00 24.41           C  
+ANISOU   20  C4  8HW B 201        0      0      0      0      0      0       C  
+HETATM   21  C5  8HW B 201      32.708  14.424 132.532  1.00 29.68           C  
+ANISOU   21  C5  8HW B 201        0      0      0      0      0      0       C  
+HETATM   22  C6  8HW B 201      31.448  13.787 131.986  1.00 28.45           C  
+ANISOU   22  C6  8HW B 201        0      0      0      0      0      0       C  
+HETATM   23  C7  8HW B 201      33.038  15.737 132.272  1.00 21.22           C  
+ANISOU   23  C7  8HW B 201        0      0      0      0      0      0       C  
+HETATM   24  C16 8HW B 201      34.211  16.255 132.795  1.00 23.73           C  
+ANISOU   24  C16 8HW B 201        0      0      0      0      0      0       C  
+HETATM   25  C17 8HW B 201      35.053  15.474 133.572  1.00 26.79           C  
+ANISOU   25  C17 8HW B 201        0      0      0      0      0      0       C  
+HETATM   26  C18 8HW B 201      34.720  14.156 133.832  1.00 25.47           C  
+ANISOU   26  C18 8HW B 201        0      0      0      0      0      0       C  
+HETATM   27  C8  8HW B 201      32.160  16.668 131.425  1.00 29.73           C  
+ANISOU   27  C8  8HW B 201        0      0      0      0      0      0       C  
+HETATM   28  C9  8HW B 201      32.723  17.170 130.263  1.00 29.15           C  
+ANISOU   28  C9  8HW B 201        0      0      0      0      0      0       C  
+HETATM   29  C10 8HW B 201      31.976  18.043 129.455  1.00 27.65           C  
+ANISOU   29  C10 8HW B 201        0      0      0      0      0      0       C  
+HETATM   30  C11 8HW B 201      30.712  18.401 129.828  1.00 28.70           C  
+ANISOU   30  C11 8HW B 201        0      0      0      0      0      0       C  
+HETATM   31  C14 8HW B 201      30.111  17.909 131.010  1.00 26.61           C  
+ANISOU   31  C14 8HW B 201        0      0      0      0      0      0       C  
+HETATM   32  C15 8HW B 201      30.868  17.046 131.815  1.00 27.98           C  
+ANISOU   32  C15 8HW B 201        0      0      0      0      0      0       C  
+HETATM   33  O2  8HW B 201      32.587  18.532 128.280  1.00 29.90           O  
+ANISOU   33  O2  8HW B 201        0      0      0      0      0      0       O  
+HETATM   34  C13 8HW B 201      31.722  19.077 127.344  1.00 32.32           C  
+ANISOU   34  C13 8HW B 201        0      0      0      0      0      0       C  
+HETATM   35  C12 8HW B 201      30.727  19.992 128.033  1.00 25.39           C  
+ANISOU   35  C12 8HW B 201        0      0      0      0      0      0       C  
+HETATM   36  O1  8HW B 201      29.960  19.302 129.016  1.00 36.20           O  
+ANISOU   36  O1  8HW B 201        0      0      0      0      0      0       O  
+HETATM   37  O   HOH A 201      17.826  13.656 106.247  1.00 64.08           O  
+ANISOU   37  O   HOH A 201        0      0      0      0      0      0       O  
+END                                                                             

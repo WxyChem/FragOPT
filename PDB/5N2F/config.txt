@@ -1,0 +1,11 @@
+receptor = ./PDB/5N2F/Protein.pdbqt
+ligand = ./bms200.pdbqt
+center_x = 32.168
+center_y = 11.761
+center_z = 126.19
+size_x = 30
+size_y = 35
+size_z = 35
+num_modes = 9
+seed = 42
+exhaustiveness = 20
