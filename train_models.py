@@ -12,13 +12,13 @@ import tensorflow as tf
 from keras import optimizers
 from keras.callbacks import EarlyStopping
 import joblib
-from libs.utils import evaluate
-from libs.models import lstm_model
+from Fraglibs.utils import evaluate
+from Fraglibs.models import lstm_model
 # from components.modeling import rf_model
 # from components.modeling import svr_model
 # from components.modeling import mlp_model
 # from components.modeling import xgb_model
-from libs.utils import dataset_sklearn
+from Fraglibs.utils import dataset_sklearn
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
@@ -202,7 +202,7 @@ LSTM_tuned_parameters = {'lstm_units': [64, 128, 256],
                          }
 
 
-mlp_tuned_parameters = {"hidden_layer_sizes": [(100,),(200,),(300,),(400,)] 
+mlp_tuned_parameters = {"hidden_layer_sizes": [(100,),(200,),(300,),(400,)],
                         "learning_rate_init": [0.001, 0.005, 0.01]
                         }
                         
@@ -271,7 +271,8 @@ def main():
                           LSTM_tuned_parameters['hidden_sizes'], 
                           LSTM_tuned_parameters['dropout_rates'], 
                           LSTM_tuned_parameters['batch_sizes'], 
-                          LSTM_tuned_parameters['learning_rates'])
+                          LSTM_tuned_parameters['learning_rates']):
+                          
         lstm_unit = params[0]
         hidden_size = params[1]
         dropout_rate = params[2]
