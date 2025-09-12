@@ -2,7 +2,15 @@
 
 Run:
 
-`conda env create -f environment.yml`
+`conda create -n FragOPT python=3.8.20`
+
+`conda install numpy=1.24 pandas=2.0.3 scikit-learn=1.3 seaborn=0.13`
+
+`conda install -c conda-forge openbabel charset-normalizer prody`
+
+`pip install torch==2.3.1+cpu -f https://download.pytorch.org/whl/torch_stable.html`
+
+`pip install tensorflow-gpu==2.10.0 xgboost-cpu==2.1.2 rdkit shap matplotlib`
 
 This will take care of installing all required dependencies.
 
@@ -28,4 +36,6 @@ After trianed the QSAR models. You can use FragOPT to optimize the target molecu
 
 `python main.py -j config.json`
 
-The configuration of optmization could refer to the `config.json`
+The configuration of optmization could refer to the `config.json`.
+
+The model of PD-L1(PDB ID: 5N2F) and COVID-19 (PDB ID: 7BQY) were pretrained in `models` folder, you can directly use them.
