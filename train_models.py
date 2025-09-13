@@ -228,7 +228,7 @@ def main():
     model4 = XGBClassifier(random_state=42)
     
     models_list = [model1, model2, model3, model4]
-    names_list = ['RF_model', 'SVR_model', 'MLP_model', 'XGB_model']
+    names_list = ['RF_model', 'SVM_model', 'MLP_model', 'XGB_model']
     
     print("\nInitialize...")
     best_parameters = []
@@ -246,7 +246,7 @@ def main():
     
     model = SVC(**best_parameters[1], random_state=42, probability=True)
     model.fit(X_train, y_train)
-    joblib.dump(model, 'SVR_model.pkl')
+    joblib.dump(model, 'SVM_model.pkl')
     
     model = MLPClassifier(**best_parameters[2], random_state=42)
     model.fit(X_train, y_train)
@@ -292,10 +292,10 @@ def main():
     
     lstm_parameters = data.iloc[0,:].tolist()
     print(f"LSTM_model, lstm_unit:{lstm_parameters[0]}, hidden_size:{lstm_parameters[1]}, dropout_rate:{lstm_parameters[2]}, learning_rate:{lstm_parameters[4]}, batch_size:{lstm_parameters[3]}")
-    model = lstm_model(input_size=1024, lstm_unit=lstm_parameters[0], hidden_size=lstm_parameters[1], dropout_rate=lstm_parameters[2])
+    model = lstm_model(input_size=1024, lstm_unit=int(lstm_parameters[0]), hidden_size=int(lstm_parameters[1]), dropout_rate=lstm_parameters[2])
     opt = optimizers.Adam(learning_rate=lstm_parameters[4])
     model.compile(loss='categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
-    history = model.fit(X_train, y_train_onehot, batch_size=lstm_parameters[3], epochs=100, callbacks=[early_stopping], verbose=1)
+    history = model.fit(X_train, y_train_onehot, batch_size=int(lstm_parameters[3]), epochs=100, callbacks=[early_stopping], verbose=1)
     model.evaluate(X_val, y_val_onehot)
     model.evaluate(X_test, y_test_onehot)
     model.save('LSTM_model.h5')
