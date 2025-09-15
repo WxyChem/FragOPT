@@ -1,180 +1,158 @@
-name: FragOpt
+name: FragOPT
 channels:
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
   - conda-forge
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/linux-64/
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
   - defaults
 dependencies:
-  - _libgcc_mutex=0.1=conda_forge
-  - _openmp_mutex=4.5=2_gnu
-  - biopython=1.83=py38h01eb140_0
-  - blas=1.1=openblas
-  - brotli=1.1.0=hb9d3cd8_2
-  - brotli-bin=1.1.0=hb9d3cd8_2
-  - brotli-python=1.0.9=py38hfa26641_8
-  - bzip2=1.0.8=h4bc722e_7
-  - ca-certificates=2024.9.24=h06a4308_0
-  - cairo=1.18.0=h3faef2a_0
-  - certifi=2024.8.30=pyhd8ed1ab_0
-  - cffi=1.17.0=py38heb5c249_0
-  - chardet=5.2.0=py38h578d9bd_1
-  - charset-normalizer=3.4.0=pyhd8ed1ab_0
-  - contourpy=1.1.1=py38h7f3f72f_1
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=5.1=1_gnu
+  - biopython=1.79=py38h497a2fe_1
+  - blas=1.0=mkl
+  - bottleneck=1.3.7=py38ha9d4c09_0
+  - brotli=1.0.9=h166bdaf_7
+  - brotli-bin=1.0.9=h166bdaf_7
+  - brotli-python=1.0.9=py38h6a678d5_8
+  - ca-certificates=2025.8.3=hbd8a1cb_0
+  - cairo=1.16.0=h6cf1ce9_1008
   - cycler=0.12.1=pyhd8ed1ab_0
-  - expat=2.6.3=h5888daf_0
-  - font-ttf-dejavu-sans-mono=2.37=hab24e00_0
-  - font-ttf-inconsolata=3.000=h77eed37_0
-  - font-ttf-source-code-pro=2.038=h77eed37_0
-  - font-ttf-ubuntu=0.83=h77eed37_3
-  - fontconfig=2.14.2=h14ed4e7_0
-  - fonts-conda-ecosystem=1=0
-  - fonts-conda-forge=1=0
-  - fonttools=4.53.1=py38h2019614_0
-  - freetype=2.12.1=h267a509_2
-  - freetype-py=2.3.0=pyhd8ed1ab_0
-  - greenlet=3.0.3=py38h17151c0_0
-  - h2=4.1.0=pyhd8ed1ab_0
-  - hpack=4.0.0=pyh9f0ad1d_0
-  - hyperframe=6.0.1=pyhd8ed1ab_0
-  - icu=73.2=h59595ed_0
-  - idna=3.10=pyhd8ed1ab_0
-  - importlib-resources=6.4.5=pyhd8ed1ab_0
+  - expat=2.4.8=h27087fc_0
+  - fontconfig=2.14.0=h8e229c2_0
+  - freetype=2.10.4=h0708190_1
+  - gettext=0.19.8.1=h73d1719_1008
+  - icu=68.2=h9c3ff4c_0
   - importlib_resources=6.4.5=pyhd8ed1ab_0
-  - keyutils=1.6.1=h166bdaf_0
-  - kiwisolver=1.4.5=py38h7f3f72f_1
-  - krb5=1.21.3=h659f571_0
-  - lcms2=2.16=hb7c19ff_0
+  - intel-openmp=2023.1.0=hdb19cb5_46306
+  - jbig=2.1=h7f98852_2003
+  - joblib=1.4.2=py38h06a4308_0
+  - jpeg=9e=h166bdaf_1
+  - lcms2=2.12=hddcbb42_0
   - ld_impl_linux-64=2.40=h12ee557_0
-  - lerc=4.0.0=h27087fc_0
-  - libblas=3.9.0=25_linux64_openblas
-  - libboost=1.84.0=hba137d9_3
-  - libboost-python=1.84.0=py38haa4b4a7_5
-  - libbrotlicommon=1.1.0=hb9d3cd8_2
-  - libbrotlidec=1.1.0=hb9d3cd8_2
-  - libbrotlienc=1.1.0=hb9d3cd8_2
-  - libcblas=3.9.0=25_linux64_openblas
-  - libdeflate=1.20=hd590300_0
-  - libedit=3.1.20191231=he28a2e2_2
-  - libexpat=2.6.3=h5888daf_0
+  - lerc=2.2.1=h9c3ff4c_0
+  - libbrotlicommon=1.0.9=h166bdaf_7
+  - libbrotlidec=1.0.9=h166bdaf_7
+  - libbrotlienc=1.0.9=h166bdaf_7
+  - libdeflate=1.7=h7f98852_5
   - libffi=3.4.4=h6a678d5_1
-  - libgcc=14.2.0=h77fa898_1
-  - libgcc-ng=14.2.0=h69a702a_1
-  - libgfortran=14.2.0=h69a702a_1
-  - libgfortran-ng=14.2.0=h69a702a_1
-  - libgfortran5=14.2.0=hd5240d6_1
-  - libglib=2.80.2=hf974151_0
-  - libgomp=14.2.0=h77fa898_1
-  - libiconv=1.17=hd590300_2
-  - libjpeg-turbo=3.0.0=hd590300_1
-  - liblapack=3.9.0=25_linux64_openblas
-  - libopenblas=0.3.28=pthreads_h94d23a6_1
-  - libpng=1.6.43=h2797004_0
-  - libpq=16.4=h2d7952a_3
-  - librdkit=2024.03.5=h79cfef2_3
-  - libstdcxx=14.2.0=hc0a3c3a_1
-  - libstdcxx-ng=14.2.0=h4852527_1
-  - libtiff=4.6.0=h1dd3fc0_3
-  - libuuid=2.38.1=h0b41bf4_0
-  - libwebp-base=1.4.0=hd590300_0
-  - libxcb=1.15=h0b41bf4_0
-  - libzlib=1.2.13=h4ab18f5_6
-  - matplotlib-base=3.7.3=py38h58ed7fa_0
+  - libgcc-ng=11.2.0=h1234567_1
+  - libgfortran-ng=11.2.0=h00389a5_1
+  - libgfortran5=11.2.0=h1234567_1
+  - libglib=2.68.4=h174f98d_1
+  - libgomp=11.2.0=h1234567_1
+  - libiconv=1.17=h166bdaf_0
+  - libpng=1.6.37=h21135ba_2
+  - libstdcxx-ng=11.2.0=h1234567_1
+  - libtiff=4.3.0=hf544144_1
+  - libuuid=2.32.1=h7f98852_1000
+  - libwebp-base=1.2.2=h7f98852_1
+  - libxcb=1.17.0=h9b100fa_0
+  - libxml2=2.9.12=h72842e0_0
+  - lz4-c=1.9.3=h9c3ff4c_1
+  - matplotlib-base=3.7.2=py38h1128e8f_0
+  - mkl=2023.1.0=h213fc3f_46344
+  - mkl-service=2.4.0=py38h5eee18b_1
+  - mkl_fft=1.3.8=py38h5eee18b_0
+  - mkl_random=1.2.4=py38hdb19cb5_0
   - munkres=1.1.4=pyh9f0ad1d_0
-  - ncurses=6.4=h6a678d5_0
-  - numpy=1.24.4=py38h59b608b_0
-  - openblas=0.3.28=pthreads_h6ec200e_1
-  - openjpeg=2.5.2=h488ebb8_0
-  - openssl=3.3.2=hb9d3cd8_0
-  - packaging=24.1=pyhd8ed1ab_0
-  - pandas=2.0.3=py38h01efb38_1
-  - pcre2=10.43=hcad00b1_0
-  - pillow=10.3.0=py38h9e66945_0
+  - ncurses=6.5=h7934f7d_0
+  - numexpr=2.8.4=py38hc78ab66_1
+  - numpy=1.24.3=py38hf6e8229_1
+  - numpy-base=1.24.3=py38h060ed82_1
+  - olefile=0.47=pyhd8ed1ab_0
+  - openbabel=3.1.1=py38hd2c4bc0_2
+  - openjpeg=2.4.0=hb52868f_1
+  - openssl=3.0.17=h5eee18b_0
+  - pandas=2.0.3=py38h1128e8f_0
+  - patsy=0.5.6=pyhd8ed1ab_0
+  - pcre=8.45=h9c3ff4c_0
   - pip=24.2=py38h06a4308_0
-  - pixman=0.43.2=h59595ed_0
-  - platformdirs=4.3.6=pyhd8ed1ab_0
-  - pooch=1.8.2=pyhd8ed1ab_0
-  - prody=2.4.1=pyh94de1ce_1
-  - pthread-stubs=0.4=hb9d3cd8_1002
-  - pycairo=1.26.1=py38he403b34_0
-  - pycparser=2.22=pyhd8ed1ab_0
-  - pyparsing=3.1.1=pyhd8ed1ab_0
-  - pysocks=1.7.1=pyha2e5f31_6
+  - pixman=0.40.0=h36c2ea0_0
+  - platformdirs=3.10.0=py38h06a4308_0
+  - pooch=1.7.0=py38h06a4308_0
+  - prody=2.2.0=py38hfa26641_0
+  - pthread-stubs=0.3=h0ce48e5_1
+  - pysocks=1.7.1=py38h06a4308_0
   - python=3.8.20=he870216_0
-  - python-dateutil=2.9.0=pyhd8ed1ab_0
-  - python-tzdata=2024.2=pyhd8ed1ab_0
+  - python-dateutil=2.9.0post0=py38h06a4308_2
+  - python-tzdata=2025.2=pyhd3eb1b0_0
   - python_abi=3.8=2_cp38
-  - pytz=2024.2=pyhd8ed1ab_0
-  - rdkit=2024.03.5=py38h890d753_3
-  - readline=8.2=h5eee18b_0
-  - reportlab=4.2.2=py38hfb59056_0
-  - requests=2.32.3=pyhd8ed1ab_0
-  - rlpycairo=0.2.0=pyhd8ed1ab_0
+  - pytz=2024.1=py38h06a4308_0
+  - readline=8.3=hc2a1206_0
+  - scikit-learn=1.3.0=py38h1128e8f_1
+  - scipy=1.10.1=py38hf6e8229_1
+  - seaborn=0.13.2=hd8ed1ab_2
+  - seaborn-base=0.13.2=pyhd8ed1ab_2
   - setuptools=75.1.0=py38h06a4308_0
-  - six=1.16.0=pyh6c4a22f_0
-  - sqlalchemy=2.0.32=py38h2019614_0
-  - sqlite=3.45.3=h5eee18b_0
-  - tk=8.6.14=h39e8969_0
-  - typing-extensions=4.12.2=hd8ed1ab_0
-  - typing_extensions=4.12.2=pyha770c72_0
-  - unicodedata2=15.1.0=py38h01eb140_0
-  - urllib3=2.2.3=pyhd8ed1ab_0
+  - six=1.16.0=pyhd3eb1b0_1
+  - sqlite=3.50.2=hb25bd0a_1
+  - statsmodels=0.13.2=py38h6c62de6_0
+  - tbb=2021.8.0=hdb19cb5_0
+  - threadpoolctl=3.5.0=py38h2f386ee_0
+  - tk=8.6.15=h54e0aa7_0
+  - unicodedata2=14.0.0=py38h0a891b7_1
+  - urllib3=2.2.3=py38h06a4308_0
   - wheel=0.44.0=py38h06a4308_0
-  - xorg-kbproto=1.0.7=hb9d3cd8_1003
-  - xorg-libice=1.1.1=hb9d3cd8_1
-  - xorg-libsm=1.2.4=he73a12e_1
-  - xorg-libx11=1.8.9=h8ee46fc_0
-  - xorg-libxau=1.0.11=hb9d3cd8_1
-  - xorg-libxdmcp=1.1.5=hb9d3cd8_0
-  - xorg-libxext=1.3.4=h0b41bf4_2
-  - xorg-libxrender=0.9.11=hd590300_0
-  - xorg-renderproto=0.11.1=hb9d3cd8_1003
-  - xorg-xextproto=7.3.0=hb9d3cd8_1004
-  - xorg-xproto=7.0.31=hb9d3cd8_1008
-  - xz=5.4.6=h5eee18b_1
-  - zipp=3.20.2=pyhd8ed1ab_0
-  - zlib=1.2.13=h4ab18f5_6
-  - zstandard=0.23.0=py38h62bed22_0
-  - zstd=1.5.6=ha6fb4c9_0
+  - xorg-libice=1.0.10=h7f98852_0
+  - xorg-libsm=1.2.3=hd9c2040_1000
+  - xorg-libx11=1.8.12=h9b100fa_1
+  - xorg-libxau=1.0.12=h9b100fa_0
+  - xorg-libxdmcp=1.1.5=h9b100fa_0
+  - xorg-libxext=1.3.6=h9b100fa_0
+  - xorg-libxrender=0.9.12=h9b100fa_0
+  - xorg-xorgproto=2024.1=h5eee18b_1
+  - xz=5.6.4=h5eee18b_1
+  - zlib=1.2.13=h5eee18b_1
+  - zstd=1.5.0=ha95c52a_0
   - pip:
-      - absl-py==2.1.0
+      - absl-py==2.3.1
       - astunparse==1.6.3
-      - cachetools==5.5.0
-      - cloudpickle==3.1.0
-      - filelock==3.13.1
-      - flatbuffers==24.3.25
-      - fsspec==2024.2.0
+      - cachetools==5.5.2
+      - certifi==2025.8.3
+      - charset-normalizer==3.4.0
+      - cloudpickle==3.1.1
+      - contourpy==1.1.1
+      - filelock==3.16.1
+      - flatbuffers==25.2.10
+      - fonttools==4.57.0
+      - fsspec==2025.3.0
       - gast==0.4.0
-      - google-auth==2.35.0
+      - google-auth==2.40.3
       - google-auth-oauthlib==0.4.6
       - google-pasta==0.2.0
-      - grpcio==1.67.1
+      - grpcio==1.70.0
       - h5py==3.11.0
+      - idna==3.10
       - importlib-metadata==8.5.0
-      - jinja2==3.1.3
-      - joblib==1.4.2
+      - jinja2==3.1.6
       - keras==2.10.0
       - keras-preprocessing==1.1.2
+      - kiwisolver==1.4.7
       - libclang==18.1.1
       - llvmlite==0.41.1
       - markdown==3.7
       - markupsafe==2.1.5
+      - matplotlib==3.7.5
       - mpmath==1.3.0
-      - networkx==3.0
+      - networkx==3.1
       - numba==0.58.1
-      - oauthlib==3.2.2
+      - oauthlib==3.3.1
       - opt-einsum==3.4.0
+      - packaging==25.0
+      - pillow==10.4.0
       - protobuf==3.19.6
       - pyasn1==0.6.1
-      - pyasn1-modules==0.4.1
+      - pyasn1-modules==0.4.2
+      - pyparsing==3.1.4
+      - rdkit==2024.3.5
+      - requests==2.32.4
       - requests-oauthlib==2.0.0
-      - rsa==4.9
-      - scikit-learn==1.3.2
-      - scipy==1.10.1
+      - rsa==4.9.1
       - shap==0.44.1
       - slicer==0.0.7
-      - sympy==1.13.1
+      - sympy==1.13.3
       - tensorboard==2.10.1
       - tensorboard-data-server==0.6.1
       - tensorboard-plugin-wit==1.8.1
@@ -182,11 +160,11 @@ dependencies:
       - tensorflow-gpu==2.10.0
       - tensorflow-io-gcs-filesystem==0.34.0
       - termcolor==2.4.0
-      - threadpoolctl==3.5.0
-      - torch==2.4.1+cpu
-      - torchaudio==2.4.1+cpu
-      - torchvision==0.19.1+cpu
-      - tqdm==4.66.6
+      - torch==2.3.1+cpu
+      - tqdm==4.67.1
+      - typing-extensions==4.13.2
       - werkzeug==3.0.6
-      - wrapt==1.16.0
+      - wrapt==1.17.3
       - xgboost-cpu==2.1.2
+      - zipp==3.20.2
+prefix: /home/xiaoyan/miniconda3/envs/FragOPT
