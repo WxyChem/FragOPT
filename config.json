@@ -22,7 +22,7 @@
 	"DEEPFRAG_config": "./output_folder/branch_config.txt",
 	"rec_path": "./PDB/5N2F/Protein.pdb",
 	"quickvina_path": "./Fraglibs/vina/qvina-w",
-    "Receptor": "/home/ls/wuxiaoyan/FragOPT/PDB/5N2F/Protein.pdbqt",
+    "Receptor": "./PDB/5N2F/Protein.pdbqt",
     "cpu_number": "32",
 	"mode_number": "10",
     "center_x": "32.168",
@@ -34,5 +34,6 @@
     "output_pdbqt": "./output_folder/5n2f_ligand_out.pdbqt",
 	"output_pdb": "./output_folder/5n2f_ligand_out",
 	"top_k": 10000,
-	"generation_output": "./output_folder/Generation.csv"
+	"generation_output": "./output_folder/Generation.csv",
+	"gen_size": 100
 }
