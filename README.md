@@ -6,11 +6,12 @@ Run:
 
 `conda install numpy=1.24 pandas=2.0.3 scikit-learn=1.3 seaborn=0.13`
 
-`conda install -c conda-forge openbabel charset-normalizer prody`
+`conda install -c conda-forge openbabel charset-normalizer`
 
 `pip install torch==2.3.1+cpu -f https://download.pytorch.org/whl/torch_stable.html`
 
-`pip install tensorflow-gpu==2.10.0 xgboost-cpu==2.1.2 rdkit shap matplotlib`
+`pip install tensorflow-gpu==2.10.0 xgboost-cpu==2.1.2 rdkit shap matplotlib prody`
+
 
 This will take care of installing all required dependencies.
 
