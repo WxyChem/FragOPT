@@ -1,3 +1,10 @@
+# FragOPT
+
+[//]: # (Badges)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This is a repository of our paper, "FragOPT: An ML-Driven Computational Workflow for Rational Fragments Optimization Toward Lead Compounds". ([Link](https://pubs.acs.org/doi/full/10.1021/acs.jcim.5c01225)).
+
 ### Installation
 
 Run:
