@@ -1,0 +1,1 @@
+N(Cc1c(cc(OCc2c(C)c(c3cc4OCCOc4cc3)ccc2)c(c1)F)F)C[C@H](O)CC(=O)O
